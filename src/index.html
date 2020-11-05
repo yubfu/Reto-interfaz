@@ -2,12 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>HolaMundo</title>
+  <title>Estudiantes AUNAR</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
-  <app-root></app-root>
+<body >
+  <header class="header" id="header">
+    <nav id="menu" class="menu">
+
+      <a href="http://localhost:4200/demo" >Demo</a>
+      <a href="http://localhost:4200/estudiantes" >Estudiantes</a>
+      <a href="http://localhost:4200/home" >Home</a>
+
+    </nav>
+
+    
+    <div id="logo" class="logo">
+      <div id="svg" class="svg">
+        <div>
+          <img class="img" src="assets/images/logo.png" alt="">
+        </div>
+        <div>
+          <h2  id="titulo">Deserción AUNAR</h2>
+        </div>
+        
+      </div>   
+    </div>
+  </header>
+
+  <section id="contenedor" class="contenedor">
+      <div class="paginas" id="paginas">
+        <app-root></app-root>
+      </div>
+
+  </section>
+  
+
+
+  <footer style=" align-content: stretch;" >
+
+    <div class="izquierda" style="width: 15%;">
+      <img class="logo-inferior" src="assets/footer/aunar.png" alt="">
+   </div>
+   
+
+
+   <div class="centro" style="display: flex;">
+
+          <div class="a-footer">
+            <li><a href="http://localhost:4200/home">Home</a></li><br>
+            <li><a href="http://localhost:4200/estudiantes">Estudiantes</a></li><br>
+            <li><a href="http://localhost:4200/demo">Demo</a></li><br>
+            <li><a href="https://aunarvillavicencio.edu.co/">Contact us</a></li>
+          </div>
+
+       <div class="b-footer">
+          <li><a href="">Blog</a></li> <br>
+          <li><a href="">Search</a></li><br>
+          <li><a href="">Privacy</a></li><br>
+          <li><a href="">Community</a></li>
+        </div>
+   </div>
+
+  <div class="derecha" >
+
+      <h4>Get our newsletter</h4>
+      <input class="caja" type="text"  placeholder="Enter your email"> <input class="boton" type="submit" value="Subcribe">
+   
+      <div class="social">
+          <a class="MEDIA" href="https://www.facebook.com/aunarvillavo/"><img  class="RED" src="assets/footer/facebook.png" alt=""></a>
+          <a class="MEDIA" href=""><img  class="RED" src="assets/footer/insta.png" alt=""></a>
+          <a class="MEDIA" href=""><img  class="RED" src="assets/footer/snapchat.png" alt=""></a>
+          <a class="MEDIA" href=""><img  class="RED" src="assets/footer/twitter.png" alt=""></a>
+          <a class="MEDIA" href="https://www.youtube.com/channel/UCdGwVTTnuLzXSqody690kng"><img  class="RED" src="assets/footer/youtube.png" alt=""></a>
+
+      </div>
+  </div>
+      
+  </footer>
+  
 </body>
 </html>

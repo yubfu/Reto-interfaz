@@ -1,0 +1,132 @@
+
+$azul : #1D2D51;
+$amarillo: #F9E547;
+$blanco : #ffff;
+$azul2: #3E5F8A;
+
+#ingresa-titulo{
+    margin: 0;
+    background-color: $azul;
+    border-radius: 6%;
+    color: $amarillo;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 18px; 
+}
+
+.titu{
+font-size: 10px;
+}
+
+.ingresa{
+    background-color:#f2f2f2;
+    text-align: center;
+    border: 1px solid black;
+    margin-right: 20px;
+    width: 500px;
+    border-radius:6%;
+    border: 0px;
+}
+
+.ingresa input{
+    width: 300px;
+    margin-right: 10px;
+    height: 30px;
+}
+
+.ingresa button{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.muestra{
+    width: 600px;
+}
+
+.muestra table{
+    margin-left: 20px;
+    width: 100%;
+    table-layout: fixed;
+    padding-left: 5px;
+    padding-right: 0px;
+    
+}
+
+.titulo-tabla{ 
+    background-color:$azul;
+    color: $amarillo;
+}
+
+/////// intento organizar tabla/////
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color:$azul; color: $amarillo;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+
+  }
+
+  //////////////////////////////////////////////
+
+
+.muestra button{
+    margin-left:100px;
+}
+
+.formulario-grid{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+///mantener footer al piso/
+#formulario-grid{
+    min-height: 432px;
+}
+
+////////////////////////
+input{
+    border-radius: 5%;
+}
+
+button{
+    border-radius: 10%;
+}
+
+#titulo-demo{
+    color:$azul;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-family: "Segoe IU", sans-serif;
+}
+
+@media (min-width:576px){
+    .formulario-grid{     
+        grid-template-columns: repeat(2,1fr);
+    }   
+}

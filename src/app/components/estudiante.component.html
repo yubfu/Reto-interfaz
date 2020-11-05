@@ -1,0 +1,25 @@
+<div class="contenedor" id="contenedor">
+    <div class="tarjeta-grid">
+
+        <div class="datos" id="datos">
+            <div>
+                ID: {{ persona.id }}
+            </div>
+            <div>
+                {{ persona.nombre }}
+            </div>
+            <div>
+                {{ persona.documento }}   
+            </div> 
+        </div>
+        
+        <div id="image" class="image" >
+            <img [src]="persona.image" alt="">
+        </div>
+        
+          
+        
+    </div>
+    <button (click)="agregarObservacion()">Agregar observación</button>
+</div>
+

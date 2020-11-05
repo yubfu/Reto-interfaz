@@ -1,0 +1,54 @@
+
+$azul : #1D2D51;
+$amarillo: #EFD42E;
+$blanco: #ffff;
+$azul2: #e4f4fd;
+
+:host{
+    margin: 2px;    
+    border: 1px solid $azul;
+    border-radius: 5px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    justify-content: center;
+    background-color:$azul;
+    color:$blanco;
+    width: 90%;
+    height: 90%;
+}
+
+#contenedor{
+    min-height: 200px;
+    padding-bottom: 8px;
+}
+
+#datos{
+float: left;
+margin: 10px;
+}
+
+img{
+    height: 150px;
+    margin: 1px;
+    float: right;
+    margin: 8%;
+    border: 3px solid #ffff;
+}
+
+button{
+    height: 30px;
+    width: 150px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    background-color: $amarillo;
+    color: $azul;
+    border-radius: 6px;
+    border: 1px solid $blanco;
+    font-size: 12px;
+}
+
+button:hover{
+    color: $amarillo;
+    background-color: $blanco;
+}

@@ -1,0 +1,4 @@
+<h1 id="titulo-estudiantes">PERFILES DE SEGUIMIENTO</h1>
+<div class="persona-grid">
+    <app-estudiante *ngFor="let p of personas" (estudianteClicked)="clickEstudiante($event)" [persona]="p"></app-estudiante>
+</div>

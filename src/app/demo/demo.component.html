@@ -1,0 +1,49 @@
+<h1 id="titulo-demo">DEMO FORMULARIO </h1>
+<section class="formulario-grid" id="formulario-grid">
+ 
+
+    <div class="ingresa">
+
+      <h3 id="ingresa-titulo" class="titu">Registro desertores academicos</h3>
+      <h2 style="font-size: 20px;">Nombre: {{ title }}</h2>
+    
+      <input type="text" [(ngModel)]="title">
+    
+      <div *ngIf=" title == '' ">
+        Ingresa el nombre del alumno desertor
+      </div>
+
+      <button (click)="agregarEstudiante(title)">Agregar</button>
+    </div>
+   
+    <div class="muestra">
+      
+        <!--
+         <ul>
+          <li *ngIf="estudiantes.length == 0">Lista vacía</li>
+          <li *ngFor="let nombre of estudiantes; index as i">
+            {{ nombre }}<button (click)="borrarEstudiante(i)">eliminar</button>
+          </li>   
+       
+        </ul>
+        -->
+        <table id="customers">
+          <tr class="titulo-tabla" >
+            <td>Nombres y apellidos</td> 
+            <td style="text-align: center;">Acciones</td> 
+          </tr>
+
+          <td *ngIf="estudiantes.length == 0">Tabla vacía</td>
+          <tr *ngFor="let nombre of estudiantes; index as i">
+            <td> {{ nombre }}</td>
+            <td><button class="btn-group btn-group-toggle" (click)="borrarEstudiante(i)">eliminar</button></td>
+          </tr>
+        </table>
+
+
+      
+    </div>
+
+
+</section>
+
